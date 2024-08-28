@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import './style.css';
 
@@ -11,7 +12,7 @@ const Footer = () => {
           {/* DANIEL'S SECTION */}
           <div className="d-flex flex-column align-items-center mx-md-2 transparent-bg">
             <a href="https://github.com/WickedDan" className="icon Daniel" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faGithub} flip size="3x" style={{ color: 'green' }} />
+              <FontAwesomeIcon icon={faGithub} flip size="3x" style={{ color: 'green' }} />
             </a>
             <a href="https://github.com/WickedDan" target="_blank" rel="noreferrer">
               <span className="d-inline-block mx-1 name">@WickedDan</span>
@@ -29,7 +30,7 @@ const Footer = () => {
           {/* PREKSHA'S SECTION */}
           <div className="d-flex flex-column align-items-center mx-md-2 transparent-bg">
             <a href="https://github.com/Preksha2408" className="icon Preksha2408" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faGithub} flip size="3x" style={{ color: 'blue' }} />
+              <FontAwesomeIcon icon={faGithub} flip size="3x" style={{ color: 'blue' }} />
             </a>
             <a href="https://github.com/Preksha2408" target="_blank" rel="noreferrer">
               <span className="d-inline-block mx-1 name">@Preksha2408</span>
@@ -50,9 +51,21 @@ const Footer = () => {
               <FontAwesomeIcon icon={faGithub} bounce size="3x" style={{ color: 'orange' }} />
             </a>
             <a href="https://github.com/johannesmstoppler" target="_blank" rel="noreferrer">
-            <span className="d-inline-block mx-1 name">@johannesmstoppler</span>
+              <span className="d-inline-block mx-1 name">@johannesmstoppler</span>
             </a>
           </div>
+        </section>
+        {/* Share Icons */}
+        <section className="share-icons-wrapper position-absolute bottom-0 end-0 p-3">
+          <a href="https://wa.me/?text=Check%20out%20Prestigle%20Planners!%20https://prestigleplanners.com" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faWhatsapp} size="3x" style={{ color: 'green', marginRight: '20px' }} />
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://prestigleplanners.com" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faFacebook} size="3x" style={{ color: 'blue', marginRight: '20px' }} />
+          </a>
+          <a href="https://www.instagram.com/?url=https://prestigleplanners.com" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faInstagram} size="3x" style={{ color: 'purple' }} />
+          </a>
         </section>
         <section className="footer" id="footer">
           <section className="form-footer">
@@ -62,6 +75,7 @@ const Footer = () => {
             </p>
           </section>
         </section>
+
       </div>
     </footer>
   );
