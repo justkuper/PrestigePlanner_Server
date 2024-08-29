@@ -3,7 +3,7 @@ import { useMutation } from "@apollo/client";
 import { CREATE_EVENT } from "../utils/mutations";
 import { Container, Col, Form, Button, Row } from "react-bootstrap";
 import Auth from "../utils/auth";
-
+import Calculator from "../components/Calculator"; // Import the Calculator component
 const CreateEvent = () => {
   const [createEvent, { error }] = useMutation(CREATE_EVENT);
   const [eventInput, setEventInput] = useState({
@@ -131,6 +131,7 @@ const CreateEvent = () => {
             </Col>
           </Row>
         </Form>
+        <Calculator /> {/* Added the Calculator component here */}
       </Container>
     </div>
   );
