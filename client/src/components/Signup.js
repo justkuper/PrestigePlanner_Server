@@ -11,6 +11,7 @@ const Signup = () => {
     username: "",
     email: "",
     password: "",
+    confirmPassword: "",
   });
 
   // set state for form validation
@@ -55,6 +56,7 @@ const Signup = () => {
       username: "",
       email: "",
       password: "",
+      confirmPassword: "",
     });
   };
 
@@ -128,6 +130,25 @@ const Signup = () => {
         />
         <Form.Control.Feedback type="invalid">
           Password is required!
+        </Form.Control.Feedback>
+      </Form.Group>
+
+       <Form.Group className="mb-3">
+        <Form.Label htmlFor="confirmPassword" className="form-label">
+          Confirm Password:
+        </Form.Label>
+        <Form.Control
+          type="password"
+          className="form-control"
+          id="confirmPassword"
+          placeholder="Confirm your password"
+          name="confirmPassword"
+          onChange={handleInputChange}
+          value={userFormData.confirmPassword}
+          required
+        />
+        <Form.Control.Feedback type="invalid">
+          Confirm Password is required!
         </Form.Control.Feedback>
       </Form.Group>
       <Button type="submit" className="btn btn-primary">
