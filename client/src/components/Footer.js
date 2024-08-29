@@ -56,7 +56,16 @@ const Footer = () => {
           </div>
         </section>
         {/* Share Icons */}
-        <section className="share-icons-wrapper position-absolute bottom-0 end-0 p-3">
+        
+        <section className="footer" id="footer">
+          <section className="form-footer">
+            <h5 className="text-center mb-2">Designed by Fab Five  </h5>
+            <p className="text-center mb-0">
+              <h6>&copy; {new Date().getFullYear()} All rights reserved.</h6>
+            </p>
+            
+          </section>
+          <section className="share-icon">
           <a href="https://wa.me/?text=Check%20out%20Prestigle%20Planners!%20https://prestigleplanners.com" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faWhatsapp} size="3x" style={{ color: 'green', marginRight: '20px' }} />
           </a>
@@ -67,14 +76,8 @@ const Footer = () => {
             <FontAwesomeIcon icon={faInstagram} size="3x" style={{ color: 'purple' }} />
           </a>
         </section>
-        <section className="footer" id="footer">
-          <section className="form-footer">
-            <h5 className="text-center mb-2">Designed by Fab Five  </h5>
-            <p className="text-center mb-0">
-              <h6>&copy; {new Date().getFullYear()} All rights reserved.</h6>
-            </p>
-          </section>
         </section>
+        
 
       </div>
     </footer>
