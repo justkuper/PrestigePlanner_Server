@@ -171,9 +171,9 @@
 }
 
 .share-icon {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: auto;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
 }
 /* COMPONENTS/FOOTER END */
 
