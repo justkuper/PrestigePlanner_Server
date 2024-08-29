@@ -81,6 +81,7 @@
   font-family: var(--AppleFont);
   bottom: 0;
   width: 100%;
+
 }
 
 .transparent-bg,
@@ -169,5 +170,10 @@
   opacity: 1;
 }
 
+.share-icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
 /* COMPONENTS/FOOTER END */
 
