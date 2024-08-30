@@ -1,7 +1,12 @@
 const { User, Event } = require("../models");
 const { signToken } = require("../utils/auth");
-const { AuthenticationError } = require("apollo-server-express");
+const { ApolloError } = require("apollo-server-errors");
 
+class AuthenticationError extends ApolloError {
+  constructor(message) {
+    super(message, 'UNAUTHORIZED');
+  }
+}
 const resolvers = {
   //queries (GET route equivalent)
   Query: {
@@ -35,6 +40,7 @@ const resolvers = {
 
     //validate email and password on login
     login: async (parent, { email, password }) => {
+      console.log("login muttation:")
       const user = await User.findOne({ email });
 
       if (!user) {
