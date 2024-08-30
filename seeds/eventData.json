@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Wedding",
+    "description": "Modern white decor",
+    "cost": 10000,
+    "location": "Stockton",
+    "date": "2024-05-01T10:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "title": "Birthday",
+    "description": "Donald Duck. Themed decor",
+    "cost": 15000,
+    "location": "london",
+    "date": "2024-05-05T15:30:00.000Z"
+  },
+  {
+    "id": "3",
+    "title": "Bachelor Party",
+    "description": "Arrange halloween themed party",
+    "cost": 50000,
+    "location": "miami",
+    "date": "2024-05-10T08:45:00.000Z"
+  }
+]
