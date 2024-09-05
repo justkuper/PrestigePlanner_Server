@@ -75,8 +75,14 @@ const resolvers = {
       );
     },
     deleteEvent: async (parent, { id }) => {
-      await Event.findByIdAndRemove(id);
+      try {
+      await Event.findByIdAndDelete(id);
       return true;
+      }
+      catch (error){
+        console.log(error);
+      }
+
     },
   },
 };
